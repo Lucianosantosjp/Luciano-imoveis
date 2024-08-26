@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Imóveis</title>
+    <!-- Bootstrap CSS -->
+    <link href="npm/bootstrap%405.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #b5d5f5;
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+        header {
+            background-color: #343a40;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #a7d1f3;
+            text-transform: uppercase;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            color: #343a40;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 30px; /* Adicionado espaçamento entre os cards */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #343a40;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .card-text {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        .btn-primary {
+            background-color: #2275ce;
+            border-color: #5491d3;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .btn-primary:hover {
+            background-color: #bbd6f1;
+            border-color: #3977b9;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #f6f8fa;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Luciano Santos</a>
+                <a href="//wa.me/5583998244884" style="color: white;"> (83) 99824-4884 Whatsapp</a>
+
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+       
+        <div class="col">
+            <div class="card">
+        
+                <div class="card-body">
+                    <h5 class="card-title">EDIFÍCIO CANUMÂ</h5>Bairro do Bessa próximo ao Praianobar, vista para o mar.
+                    <p>Somente para <em><strong>Contrato mínimo 12 meses</strong></em></p>
+                    <ul>
+                        <li><strong>100 metros da praia</strong></li>
+                        <li><strong>Semi-Mobiliado</strong></li>
+                        <li><strong>4° andar c/ elevador</strong></li>
+                        <li><strong>Posição:</strong> Nascente Sul</li>
+                        <li><strong>Área:</strong> 130 m²</li>
+                        <li><strong>Quartos:</strong> 3 sendo 1 suíte c/ varanda</li>
+                        <li><strong>Sala:</strong> 2 ambientes c/ varanda</li>
+                        <li><strong>Cozinha</strong></li>
+                        <li><strong>Banheiro:</strong> 3</li>
+                        <li><strong>Garagem:</strong> 1 vaga</li>
+                        <li><strong>Área de lazer completa</strong></li>Piscina / academia / sauna / salão de festas.
+                    </ul>
+                    <h2>R$ 2.900,00 + 1 caução</h2>
+                    <p>Condomínio incluso água e gás.</p>
+                    <a href="https://drive.google.com/drive/folders/1bGk6TpL6LQwePdXcZoMiGhsIbDau0top?usp=drive_link" class="btn btn-primary" target="_blank">Ver fotos</a>
+                
+                </div>
+            
+             </div>
+        <div class="col">
+            <div class="card">
+                <img src="fachada.jpg" class="card-img-top" alt="Imagem do Imóvel">
+                <div class="card-body">
+                    <h5 class="card-title">Localizado no Spazio Jardins do Litoral</h5>
+                    <p>Somente para <em><strong>VENDA</strong></em></p>
+                    <ul>
+                        <li><strong>150 metros da praia</strong></li>
+                        <li><strong>Sem Mobiliado</strong></li>
+                        <li><strong>4° andar c/ elevador</strong></li>
+                        <li><strong>Posição:</strong> Sul</li>
+                        <li><strong>Área:</strong> 48 m²</li>
+                        <li><strong>Quartos:</strong> 2</li>
+                        <li><strong>Sala:</strong> 2 ambientes</li>
+                        <li><strong>Cozinha</strong></li>
+                        <li><strong>Banheiro:</strong> 1</li>
+                        <li><strong>Garagem:</strong> 1 vaga</li>
+                        <li><strong>Área de lazer completa</strong></li>
+                    </ul>
+                    <h2>R$ 225.000,00 (VENDIDO)</h2>
+                    <p>Condomínio incluso água e gás.</p>
+                    <a href="" class="btn btn-primary" target="_blank">Aguardando fotos</a>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Card de imóvel -->
+           
+            </div>
+            <!-- Outro Card de imóvel -->
+            <div class="col">
+                <div class="card">
+                    <img src="fachada.jpg" class="card-img-top" alt="Imagem do Imóvel">
+                    <div class="card-body">
+                        <h5 class="card-title">Localizado no Spazio Jardins do Litoral</h5>
+                        <p>Somente para <em><strong>ALUGUEL</strong></em></p>
+                        <ul>
+                            <li><strong>150 metros da praia</strong></li>
+                            <li><strong>Sem mobilia</strong></li>
+                            <li><strong>3° andar c/ elevador</strong></li>
+                            <li><strong>Posição:</strong> Norte</li>
+                            <li><strong>Área:</strong> 53 m²</li>
+                            <li><strong>Quartos:</strong> 2, sendo 1 suíte</li>
+                            <li><strong>Sala:</strong> 2 ambientes</li>
+                            <li><strong>Cozinha</strong></li>
+                            <li><strong>Banheiro:</strong> 2</li>
+                            <li><strong>Garagem:</strong> 1 vaga</li>
+                            <li><strong>Área de lazer completa</strong></li>
+                        </ul>
+                        <h2>R$ 1.600,00 + 1 caução</h2>
+                        <p>Condomínio incluso água e gás.</p>
+                        <a href="" class="btn btn-primary" target="_blank">Aguardando fotos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mais um Card de imóvel -->
+            <div class="col">
+                <div class="card">
+                    <img src="fachada.jpg" class="card-img-top" alt="Imagem do Imóvel">
+                    <div class="card-body">
+                        <h5 class="card-title">Localizado no Spazio Jardins do Litoral</h5>
+                        <p>Somente para <em><strong>VENDA.</strong></em></p>
+                        <ul>
+                            <li><strong>150 metros da praia</strong></li>
+                            <li><strong>Mobiliado</strong></li>
+                            <li><strong>5° andar c/ elevador</strong></li>
+                            <li><strong>Posição:</strong> Norte</li>
+                            <li><strong>Área:</strong> 50 m²</li>
+                            <li><strong>Quartos:</strong> 2, com ar condicionado</li>
+                            <li><strong>Sala:</strong> 2 ambientes</li>
+                            <li><strong>Cozinha</strong></li>
+                            <li><strong>Banheiros:</strong> 1</li>
+                            <li><strong>Garagem:</strong> 1 vaga</li>
+                            <li><strong>Área de lazer completa</strong></li>
+                        </ul>
+                        <h2>R$ 1.900,00 + 1 CAUÇÃO</h2>
+                        <p>Condomínio incluso água e gás.</p>
+                        <a href="https://drive.google.com/drive/folders/1y8cGMZp-4mlCQmFjU8Atg8CnLBq3mwAU?usp=drive_link" class="btn btn-primary" target="_blank">Ver fotos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Outro Card de imóvel -->
+            <div class="col">
+                <div class="card">
+                    <img src="fachada.jpg" class="card-img-top" alt="Imagem do Imóvel">
+                    <div class="card-body">
+                        <h5 class="card-title">Localizado no Spazio Jardins do Litoral</h5>
+                        <p>Somente para <em><strong>VENDA.</strong></em></p>
+                        <ul>
+                            <li><strong>150 metros da praia</strong></li>
+                            <li><strong>Sem mobilia</strong></li>
+                            <li><strong>2° andar c/ elevador</strong></li>
+                            <li><strong>Posição:</strong> Sul</li>
+                            <li><strong>Área:</strong> 50 m²</li>
+                            <li><strong>Quartos:</strong> 2</li>
+                            <li><strong>Sala:</strong> 2 ambientes</li>
+                            <li><strong>Cozinha</strong></li>
+                            <li><strong>Banheiro:</strong> 1</li>
+                            <li><strong>Garagem:</strong> 1 vaga</li>
+                            <li><strong>Área de lazer completa</strong></li>
+                        </ul>
+                        <h2>R$ 270.000,00</h2>
+                        <p>Condomínio incluso água e gás.</p>
+                        <strong><p>OBS: ESSE VALOR É SEM MOBILIA.</p></strong>
+                        <a href="https://drive.google.com/drive/folders/1lrSoHRr4eFUvhATvebEuFbOvkKnoStXm?usp=drive_link" class="btn btn-primary" target="_blank">Ver fotos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Novo Card de imóvel -->
+            <div class="col">
+                <div class="card">
+                    <img src="fachada.jpg" class="card-img-top" alt="Imagem do Imóvel">
+                    <div class="card-body">
+                        <h5 class="card-title">Localizado Spazio Jardins do Litoral 501</h5>
+                        <p>Somente para <em><strong>VENDA</strong></em></p>
+                        <ul>
+                            <li><strong>150 metros da praia</strong></li>
+                            <li><strong>Sem mobiliado</strong></li>
+                            <li><strong>5° andar c/ elevador</strong></li>
+                            <li><strong>Posição:</strong> Sul</li>
+                            <li><strong>Área:</strong> 50 m²</li>
+                            <li><strong>Quartos:</strong> 2</li>
+                            <li><strong>Sala:</strong> 2 ambiente</li>
+                            <li><strong>Cozinha</strong></li>
+                            <li><strong>Banheiro:</strong> 1</li>
+                            <li><strong>Garagem:</strong> 1 vaga</li>
+                            <li><strong>Área de lazer completa</strong></li>
+                        </ul>
+                        <h2>R$ 260.000,00</h2>
+                        <p>Condomínio incluso água e gás.</p>
+                        <a href="" class="btn btn-primary" target="_blank">Aguardando fotos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <span>&copy; 2024 Luciano Santos</span>
+        </div>
+    </footer>
+    <!-- Bootstrap JS e dependências -->
+    <script src="npm/%40popperjs/core%402.11.6/dist/umd/popper.min.js"></script>
+    <script src="npm/bootstrap%405.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- Seu JavaScript personalizado -->
+    <script>
+        // Se necessário, adicione seu JavaScript personalizado aqui
+    </script>
+</body>
+</html>
